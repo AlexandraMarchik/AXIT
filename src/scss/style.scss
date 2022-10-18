@@ -74,6 +74,38 @@ html {
             height: 75px;
             padding: 22px 0;
             }
+            .header__burger {
+               @media screen and (max-width:767px) {
+                  display: block;
+                  position: relative;
+                  width: 30px;
+                  height: 20px;
+                  margin-right: 20px;
+                  &::before,
+                  &::after{
+                     content: '';
+                     background-color: #fff;
+                     position:absolute;
+                     width: 100%;
+                     height: 2px;
+                     left: 0;
+                  }
+                  &::before{
+                     top: 0;
+                  }
+                  &::after{
+                     bottom: 0;
+                  }
+                  & span{
+                     background-color: #fff;
+                     position:absolute;
+                     width: 100%;
+                     height: 2px;
+                     left: 0;
+                     top:9px;
+                  }
+               }
+            }
          .header__nav {
             @media screen and (max-width:767px) {
                display: none;
@@ -305,7 +337,6 @@ main{
                      @media screen and (max-width:479px) {
                         width: 240px;
                      }
-
                      
                   }
                   .form__info:focus{
@@ -327,6 +358,10 @@ main{
                      margin-top: 60px;
                      @media screen and (max-width:992px) {
                         margin-top: 30px;
+                     }
+                     &:hover{
+                        background-color: #AB4949;
+                        transition: all .3s;
                      }
                      & input:hover{
                      transform: scale(1.1);
@@ -489,7 +524,13 @@ main{
                   align-items: center;
                   justify-content: center;
                   flex-direction: column;
-            }
+               }
+               @media screen and (max-width:400px) {
+                  margin-left: 25px;
+                  margin-right: 25px;
+               }
+               
+               
                .title {
                   font-family: 'Open Sans-Bold';
                   font-size: 30px;
@@ -528,6 +569,10 @@ main{
                   background-color: #EC7979;
                   margin-top: 40px;
                   margin-bottom: 60px;
+                  &:hover{
+                     background-color: #AB4949;
+                     transition: all .3s;
+                  }
                   @media screen and (max-width:1024px) {
                      margin-bottom: 50px;
                      width: 231px;
@@ -541,7 +586,7 @@ main{
                      margin-top: 15px;
                      width: 242px;
                   }
-                  & :hover{
+                  & a:hover{
                      transform: scale(1.1);
                      transition: all .3s;
                      color: rgb(244, 219, 219);
@@ -1219,8 +1264,8 @@ main{
                   justify-content: center;
                   margin-bottom: 50px;
                   & input:hover{
-                     color: #522222;
-                     background-color: #e74646;
+                     color: #f7e9e9;
+                     background-color: #AB4949;
                      transition: all 0.4s;
                   }
                   .button {
