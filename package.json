@@ -1,0 +1,25 @@
+{
+   "name": "fe39-kursovaya",
+   "version": "1.0.0",
+   "source": "./src/index.html",
+   "description": "block1(kersovaya)",
+   "main": "index.js",
+   "scripts": {
+      "start": "parcel"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/AlexandraMarchik/FE39-Kursovaya.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/AlexandraMarchik/FE39-Kursovaya/issues"
+   },
+   "homepage": "https://github.com/AlexandraMarchik/FE39-Kursovaya#readme",
+   "devDependencies": {
+      "@parcel/transformer-sass": "^2.7.0",
+      "parcel": "^2.7.0",
+      "sass": "^1.55.0"
+   }
+}
